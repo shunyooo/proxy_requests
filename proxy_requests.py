@@ -104,7 +104,7 @@ class ProxyRequests:
             try:
                 request = requests.post(
                     self.url,
-                    json=data,
+                    data=data,
                     timeout=self.rdata['timeout'],
                     proxies=proxies)
                 self._set_request_data(request, current_socket)
@@ -124,7 +124,7 @@ class ProxyRequests:
             try:
                 request = requests.post(
                     self.url,
-                    json=data,
+                    data=data,
                     timeout=self.rdata['timeout'],
                     headers=self.rdata['headers'],
                     proxies=proxies)
@@ -261,7 +261,7 @@ class ProxyRequestsBasicAuth(ProxyRequests):
             try:
                 request = requests.post(
                     self.url,
-                    json=data,
+                    data=data,
                     auth=(self.username, self.password),
                     timeout=self.rdata['timeout'],
                     proxies=proxies)
@@ -282,7 +282,7 @@ class ProxyRequestsBasicAuth(ProxyRequests):
             try:
                 request = requests.post(
                     self.url,
-                    json=data,
+                    data=data,
                     auth=(self.username, self.password),
                     timeout=self.rdata['timeout'],
                     headers=self.rdata['headers'],
