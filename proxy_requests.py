@@ -59,8 +59,8 @@ class ProxyRequests:
         if len(self.sockets) > 0:
             current_socket = self.sockets.pop(self._rand_sock())
             proxies = {
-                'http': 'http://' + current_socket,
-                'https': 'https://' + current_socket
+                'http': current_socket,
+                'https': current_socket
             }
             try:
                 request = requests.get(
@@ -78,8 +78,8 @@ class ProxyRequests:
         if len(self.sockets) > 0:
             current_socket = self.sockets.pop(self._rand_sock())
             proxies = {
-                'http': 'http://' + current_socket,
-                'https': 'https://' + current_socket
+                'http': current_socket,
+                'https': current_socket
             }
             try:
                 request = requests.get(
@@ -98,8 +98,8 @@ class ProxyRequests:
         if len(self.sockets) > 0:
             current_socket = self.sockets.pop(self._rand_sock())
             proxies = {
-                'http': 'http://' + current_socket,
-                'https': 'https://' + current_socket
+                'http': current_socket,
+                'https': current_socket
             }
             try:
                 request = requests.post(
@@ -118,8 +118,8 @@ class ProxyRequests:
         if len(self.sockets) > 0:
             current_socket = self.sockets.pop(self._rand_sock())
             proxies = {
-                'http': 'http://' + current_socket,
-                'https': 'https://' + current_socket
+                'http': current_socket,
+                'https': current_socket
             }
             try:
                 request = requests.post(
@@ -139,8 +139,8 @@ class ProxyRequests:
         if len(self.sockets) > 0:
             current_socket = self.sockets.pop(self._rand_sock())
             proxies = {
-                'http': 'http://' + current_socket,
-                'https': 'https://' + current_socket
+                'http': current_socket,
+                'https': current_socket
             }
             try:
                 request = requests.post(
@@ -159,8 +159,8 @@ class ProxyRequests:
         if len(self.sockets) > 0:
             current_socket = self.sockets.pop(self._rand_sock())
             proxies = {
-                'http': 'http://' + current_socket,
-                'https': 'https://' + current_socket
+                'http': current_socket,
+                'https': current_socket
             }
             try:
                 request = requests.post(
@@ -214,8 +214,8 @@ class ProxyRequestsBasicAuth(ProxyRequests):
         if len(self.sockets) > 0:
             current_socket = self.sockets.pop(self._rand_sock())
             proxies = {
-                'http': 'http://' + current_socket,
-                'https': 'https://' + current_socket
+                'http': current_socket,
+                'https': current_socket
             }
             try:
                 request = requests.get(
@@ -234,8 +234,8 @@ class ProxyRequestsBasicAuth(ProxyRequests):
         if len(self.sockets) > 0:
             current_socket = self.sockets.pop(self._rand_sock())
             proxies = {
-                'http': 'http://' + current_socket,
-                'https': 'https://' + current_socket
+                'http': current_socket,
+                'https': current_socket
             }
             try:
                 request = requests.get(
@@ -255,8 +255,8 @@ class ProxyRequestsBasicAuth(ProxyRequests):
         if len(self.sockets) > 0:
             current_socket = self.sockets.pop(self._rand_sock())
             proxies = {
-                'http': 'http://' + current_socket,
-                'https': 'https://' + current_socket
+                'http': current_socket,
+                'https': current_socket
             }
             try:
                 request = requests.post(
@@ -276,8 +276,8 @@ class ProxyRequestsBasicAuth(ProxyRequests):
         if len(self.sockets) > 0:
             current_socket = self.sockets.pop(self._rand_sock())
             proxies = {
-                'http': 'http://' + current_socket,
-                'https': 'https://' + current_socket
+                'http': current_socket,
+                'https': current_socket
             }
             try:
                 request = requests.post(
@@ -298,8 +298,8 @@ class ProxyRequestsBasicAuth(ProxyRequests):
         if len(self.sockets) > 0:
             current_socket = self.sockets.pop(self._rand_sock())
             proxies = {
-                'http': 'http://' + current_socket,
-                'https': 'https://' + current_socket
+                'http': current_socket,
+                'https': current_socket
             }
             try:
                 request = requests.post(
@@ -319,8 +319,8 @@ class ProxyRequestsBasicAuth(ProxyRequests):
         if len(self.sockets) > 0:
             current_socket = self.sockets.pop(self._rand_sock())
             proxies = {
-                'http': 'http://' + current_socket,
-                'https': 'https://' + current_socket
+                'http': current_socket,
+                'https': current_socket
             }
             try:
                 request = requests.post(
